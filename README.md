@@ -83,6 +83,10 @@ return table
     
 ### When you have completed the Lab tutorial 
 
+By this time in your CSPB career you should be able to write small programs from scratch.  The programs will need to provide comments that describe the purpose and usage of the program, purpose and usage of each function, and comments with the functions describing the algorith being used to solve the problem.
+
+We will continue to provide frameworks for the individual recitation labs so that you have a good starting point to complete the intended training.
+	
 <img src="images/deliverable.png" alt="Deliverable Item" WIDTH=40 ALIGN="left" />
 Although the grading will be done by accessing your Public Domain Website, <br>
 you must submit the following to Moodle Assignment:
