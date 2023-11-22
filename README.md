@@ -63,17 +63,20 @@ return buffer
 
 <hr>
 	
-### Part 3 - Implement the `get_value table(command_line)` function
+### Part 3 - Implement the `get_value_table(command_line)` function
 
 Here is a basic algorithm for the function:
 ```
 allocate a minimum amount of table space
+
 while more data in command line
 	get next token
 	convert token into integer value
 	if (no space left in table)
 		extend the table
 	append the value to the table
+	
+append terminator value to table 
 return table
 ```
 <hr>
