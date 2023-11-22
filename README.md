@@ -172,8 +172,7 @@ For reference, we would suggest that you create 4-5 individual sub-steps to comp
 <hr>
 	
 ### Part 3 - Implement the `get_value_table(command_line)` function
-
-Here is a basic algorithm for the function:
+The idea is to parse the line of text into sections and convert each section of text into an integer value.  You will again store the data in a dynamically allocated and unbounded data structure.  Here is a basic algorithm for the function:
 ```
 allocate a minimum amount of table space
 
@@ -187,6 +186,12 @@ while more data in command line
 append terminator value to table 
 return table
 ```
+
+The functions that you can use to break the complete command line into a series of space delimited strings is `strtok()` or `strtok_r()` if you need a recursive (reusable with different values) function.  Practice with the function for initializing and then pregressively collecting strings.
+
+For each string extracted, convert from the ASCII string into an integer value using `atoi()`.  For each new value, place it into the table.  If the table is full, extend the table by a small amount.
+
+As with the previous atep, we would suggest that you create 4-5 individual sub-steps to complete the code for this function. Steps would include getting a small amound of values and returning those to the caller, being able to remember the number of values collected and number of integers allocated, and then adding the code to reallocate the table when it gets full.
 <hr>
     
 ### When you have completed the Lab tutorial 
@@ -194,9 +199,12 @@ return table
 By this time in your CSPB career you should be able to write small programs from scratch given only the requirements for its functionality.  You will need to design the algorithms needed to solve the problems and implement the code to perform those algorithms.  The programs you create will need to provide comments that describe the purpose and usage of the program, purpose and usage of each function, and comments with the functions describing the algorith being used to solve the problem.
 
 We will continue to provide frameworks for the individual recitation labs so that you have a good starting point to complete the intended training.  These templates should allow you to see the level of documentation expected and style of code we prefer to see.
+
+***Make sure to `commit` to your local repository and `push` to the remote repository.*** 
+We will be grading your work based on the information that you have in your remote repository.
 	
 <img src="images/deliverable.png" alt="Deliverable Item" WIDTH=40 ALIGN="left" />
-Although the grading will be done by accessing your Public Domain Website, <br>
+Although the grading of your code will be done by accessing your remote repository, <br>
 you must submit the following to Moodle Assignment:
 
 * Your name:
