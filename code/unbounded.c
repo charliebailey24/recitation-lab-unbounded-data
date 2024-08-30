@@ -117,7 +117,7 @@ int *get_value_table(char *command_line) {
 
 int main(int argc,char **argv) {
 	mtrace ();
-
+s
 	// make the stdout and stderr file descriptors non-buffered
 	setvbuf(stdout, NULL, _IONBF, 0);
 	setvbuf(stderr, NULL, _IONBF, 0);
